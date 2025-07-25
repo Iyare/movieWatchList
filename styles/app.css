@@ -2,6 +2,7 @@
     --white: #fff;
     --gray300: #f0f0f0;
     --gray600: #535353;
+    --container-width: 1020px;
 }
 
 
@@ -14,8 +15,11 @@ body{
 .container {
     margin-right: auto;
     margin-left: auto;
-    max-width: 450px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    max-width: var(--container-width);
 }
+
     
 header {
     background-image: url("/img/header-bg.jpg");
@@ -44,22 +48,29 @@ header>div {
 
 }
 
+#search {
+    margin: -20px auto;
+    padding: 0 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
 #search-box {
+    flex-grow: 1;
+    max-width: var(--container-width);
     display: flex;
     border: 1px solid var(--gray300);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -20px;
     background-color: var(--white);
-    
-    
+        
     input, button{
          padding-top:1em;
-        padding-bottom:1em;
-       
+        padding-bottom:1em;   
     }
+    
     label{
        
         padding: 0.3em 0.5em;
@@ -68,9 +79,8 @@ header>div {
     input {
   
         border: none;
-        flex-grow: 2;
+        flex-grow: 5;
         border-right: 2px solid var(--gray300);
-      
     }
     
     button {
@@ -88,7 +98,7 @@ header>div {
 }
 
 div#movies {
-    margin-top: 1.5em;
+    margin-top: 2em;
 }
 
 .movie {
@@ -125,7 +135,8 @@ div#movies {
         font-weight: 400;
         margin: 1em 0;
         display: flex;
-        justify-content: space-between;
+        gap: 1em;
+        /* justify-content: space-between; */
         align-items: center;
         color: var(--gray600);
         
