@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Watch List | Judah Portfolio Project</title>
-    
+    <title>Movie Watch List | Portfolio Project</title>
+
     <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/app.css">
-    
+
     <script type="module" src="app.js" defer></script>
 </head>
+
 <body>
     <header>
         <div class="container">
             <h1>Find your film</h1>
-        <p>My Watchlist</p>
+            <p>My Watchlist</p>
         </div>
     </header>
-    
+
     <main>
-        <div id="search">
-            <div id="search-box">
-            <label for="query"><img src="/img/search-icon.svg" ></label>
-            <input type="text" id="search" placeholder="Search for a movie">
-            <button id="search-btn">Search</button>
-        </div>
-        </div>
-        
-        <div id="movies" class="container">
+        <section id="search">
+            <form id="search-box">
+                <label for="query"><img src="/img/search-icon.svg"></label>
+                <input type="text" id="query" placeholder="Search for a movie">
+                <button id="search-btn" type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="movies" class="container">
             <div class="movie">
-                <img src="/img/movie.jpg" alt="movie poster">
+                <img class="movie-poster" src="/img/movie.jpg" alt="movie poster">
                 <div>
                     <div id="movie-name">
                         <h2>Blade Runner</h2>
@@ -40,16 +42,90 @@
                         <span>Action, Drama, Mystery</span>
                         <span id="watchlist-icon"><img src="/img/add-movie-icon.svg" alt=""> Watchlist</span>
                     </div>
-                    <div id="movie-summary">
+                    <div id="movie-plot">
                         <p>
-                            A blade runner must pursue and terminate four replicants who stole a ship in space, and have returned to Earth to find their creator.
+                            A blade runner must pursue and terminate four replicants who stole a ship in space, and have
+                            returned to Earth to find their creator.
                         </p>
                     </div>
                 </div>
-                
-                
+
+
             </div>
-        </div>
+        </section>
+            <section id="search-results">
+
+            
+            </section>
+        
     </main>
 </body>
+
 </html>
+
+<!-- {
+  "Title": "The Powerpuff Girls",
+  "Year": "1998–2004",
+  "imdbID": "tt0175058",
+  "Type": "series",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BODY3YjMyOTktZWFiZS00MGNkLWExZjUtYjJjYjljMGM1YWY4XkEyXkFqcGc@._V1_SX300.jpg"
+} -->
+  
+
+<!-- 
+Object { Title: "Blade Runner", Year: "1982", Rated: "R", Released: "25 Jun 1982", Runtime: "117 min", Genre: "Action, Drama, Sci-Fi", Director: "Ridley Scott", Writer: "Hampton Fancher, David Webb Peoples, Philip K. Dick", Actors: "Harrison Ford, Rutger Hauer, Sean Young", Plot: "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator.", … }
+​
+Actors: "Harrison Ford, Rutger Hauer, Sean Young"
+​
+Awards: "Nominated for 2 Oscars. 13 wins & 22 nominations total"
+​
+BoxOffice: "$32,914,489"
+​
+Country: "United States, United Kingdom"
+​
+DVD: "N/A"
+​
+Director: "Ridley Scott"
+​
+Genre: "Action, Drama, Sci-Fi"
+​
+Language: "English, German, Cantonese, Japanese, Hungarian, Arabic, Korean"
+​
+Metascore: "84"
+​
+Plot: "A blade runner must pursue and terminate four replicants who stole a ship in space and have returned to Earth to find their creator."
+​
+Poster: "https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_SX300.jpg"
+​
+Production: "N/A"
+​
+Rated: "R"
+​
+Ratings: Array(3) [ {…}, {…}, {…} ]
+​
+Released: "25 Jun 1982"
+​
+Response: "True"
+​
+Runtime: "117 min"
+​
+Title: "Blade Runner"
+​
+Type: "movie"
+​
+Website: "N/A"
+​
+Writer: "Hampton Fancher, David Webb Peoples, Philip K. Dick"
+​
+Year: "1982"
+​
+imdbID: "tt0083658"
+​
+imdbRating: "8.1"
+​
+imdbVotes: "858,617"
+​
+<prototype>: Object { … }
+app.js:12:17
+
+-->
