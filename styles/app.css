@@ -105,13 +105,18 @@ div#movies {
         }
         
         #rating{
-            /* background-color: #535353; */
+            
             display: flex;
             justify-content: center;
             align-items:center;
             gap: 0.5em;
             font-size: 0.8rem;
             margin-left: 10px;
+            
+            /* alignment correction for the rating star */
+            img {
+                margin-top: -0.2em;
+            }
         }
     }
     
