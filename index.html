@@ -12,19 +12,22 @@
 </head>
 <body>
     <header>
-        <h1>Find your film</h1>
+        <div class="container">
+            <h1>Find your film</h1>
         <p>My Watchlist</p>
+        </div>
     </header>
     
     <main>
-        <div>
-            <label for="query"></label>
-            <input type="text" id="search">
+        <div id="search-box" class="container">
+            <label for="query"><img src="/img/search-icon.svg" ></label>
+            <input type="text" id="search" placeholder="Search for a movie">
             <button id="search-btn">Search</button>
         </div>
+        
         <div id="movies">
             <div>
-                <img src="" alt="movie poster">
+                <img src="/img/movie.jpg" alt="movie poster">
                 <div>
                     <div>
                         <h2>Blade Runner</h2>
