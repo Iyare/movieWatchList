@@ -78,7 +78,66 @@ header>div {
         flex-grow: 1;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
- cursor: pointer;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: var(--gray600);
+        color: var(--white);
     }
     
+}
+
+div#movies {
+    margin-top: 1.5em;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+    #movie-name{
+        display: flex;
+        
+        h2 {
+            font-weight: 500;
+            font-size: 1.3rem;
+        }
+        
+        #rating{
+            /* background-color: #535353; */
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            gap: 0.5em;
+            font-size: 0.8rem;
+            margin-left: 10px;
+        }
+    }
+    
+    #movie-info {
+        font-size: 0.7rem;
+        font-weight: 400;
+        margin: 1em 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--gray600);
+        
+        #watchlist-icon{
+            display: flex;
+            align-items: center;
+            gap: 0.5em;
+            justify-content: center;
+        }
+    }
+    
+    #movie-summary {
+        p {
+            font-size: 0.9em;
+            line-height: 1.2;
+            color: var(--gray600);
+            font-weight: 300;
+        }
+    }
 }
